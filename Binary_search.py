@@ -5,7 +5,7 @@ def search(nums, target):
 
         
         while left <= right:
-            middle= left + (right-left)//2
+            middle= (left + right)//2
             
             
             if nums[middle] == target:
