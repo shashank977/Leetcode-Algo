@@ -10,3 +10,7 @@ def bubbleSort(array):
                 isSorted=False
 
     return array
+
+
+##  time: O(N*N)
+## space: O(1)
