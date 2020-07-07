@@ -1,6 +1,9 @@
 # test cases 1:  s = "abc", t = "ahbgdc"
 # test cases 2:  s = "axc", t = "ahbgdc"
         
+        
+        
+# (1)        
 def isSubsequence(s, t):
     
     s_pointer =0
@@ -14,7 +17,7 @@ def isSubsequence(s, t):
         
         
         
-        
+# (2)       
 def isSubsequence(s, t):
     s_pointer = 0
     t_pointer = 0
