@@ -11,6 +11,8 @@ def twoSum(nums, target):
     return []              
 
 
+
+
 # 2) using hash table
 # time: O(N)       space: O(N)
 
@@ -23,6 +25,9 @@ def twoSum(nums,target):
         else:
             d[i] = True
     return []
+
+
+
 
 # 3)  time: O(N*log(N))    space: O(1)
 
