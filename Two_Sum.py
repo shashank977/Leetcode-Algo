@@ -1,4 +1,4 @@
-#1) using double for loop
+# 1) using double for loop
 # time: O(N^2)     space: O(1)
 
 def twoSum(nums, target):     
@@ -11,7 +11,7 @@ def twoSum(nums, target):
     return []              
 
 
-#2) using hash table
+# 2) using hash table
 # time: O(N)       space: O(N)
 
 def twoSum(nums,target):
@@ -22,4 +22,23 @@ def twoSum(nums,target):
             return [nums.index(potentialMatch), nums.index(i)]
         else:
             d[i] = True
+    return []
+
+# 3)  time: O(N*log(N))    space: O(1)
+
+def twoSum(nums,target):
+
+    nums.sort()
+    left = 0
+    right= len(nums)-1
+
+    while left < right:
+        sum = nums[left] + nums[right]
+        if sum == target:
+            return left,right
+        elif sum < target:
+            left+=1
+        elif sum > target:
+            right -=1
+
     return []
