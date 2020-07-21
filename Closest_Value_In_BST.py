@@ -1,4 +1,4 @@
-# time: O(log(n))      space: O(log(N))
+# time: O(log(N))    space: O(log(N))
 
 def ClosestValueInBST(tree,target):
     return ClosestValueInBST_Helper(tree,target, float("inf"))
