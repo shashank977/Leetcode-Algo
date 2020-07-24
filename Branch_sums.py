@@ -1,5 +1,16 @@
 # Algorithm for sum of branches in a tree
 
+# example:     4
+#             / \
+#            5   7
+#           / \ / \
+#          3  2 6  2
+#            /      \
+#           3        8
+
+# The above tree should return: [ 12, 14, 17, 21]
+
+
 class BinaryTree:
     def __init__(self,value):
         self.value = value
