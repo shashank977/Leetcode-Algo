@@ -1,4 +1,4 @@
-# Algorithm for sum of branches in a tree
+# Algorithm to find sum of branches in a tree
 
 # example:     4
 #             / \
@@ -8,7 +8,7 @@
 #            /      \
 #           3        8
 
-# The above tree should return: [ 12, 14, 17, 21]
+# The above example should return:  [ 12, 14, 17, 21]
 
 
 class BinaryTree:
