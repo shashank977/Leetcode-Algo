@@ -26,10 +26,10 @@ class BinaryTree:
         if node is None:
             return
 
-        newRunningSum = ongoing_sum + node.value
+        new_ongoing_sum = ongoing_sum + node.value
         if node.left is None and node.right is None:
-            sums.append(newRunningSum)
+            sums.append(new_ongoing_sum)
             return
 
-        calculate_Branch_Sums(node.right, newRunningSum, sums)
-        calculate_Branch_Sums(node.left, newRunningSum, sums)
+        calculate_Branch_Sums(node.right, new_ongoing_sum, sums)
+        calculate_Branch_Sums(node.left, new_ongoing_sum, sums)
