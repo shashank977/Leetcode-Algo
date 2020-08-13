@@ -2,9 +2,11 @@
 
 def isvalid(s):
 
-  opeaning_bracket= "([{"
-  closing_bracket = ")]}"
-  matching_bracket={ "}":"{","]":"[", ")":"("  }
+  opeaning_bracket = "([{"
+  closing_bracket  = ")]}"
+  matching_bracket = { ")":"(",
+                       "}":"{",
+                       "]":"["  }
 
   stack=[]
 
