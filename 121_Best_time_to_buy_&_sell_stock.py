@@ -1,4 +1,6 @@
-# Brute force
+# (1) Brute force
+
+#   Time: O(N^2)   ,   Space: O(1)
 
 def maxProfit(stocks):
     profit = 0
