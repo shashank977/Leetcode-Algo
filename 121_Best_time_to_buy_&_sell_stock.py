@@ -1,5 +1,4 @@
 # (1) Brute force
-
 #   Time: O(N^2)   ,   Space: O(1)
 
 def maxProfit(stocks):
@@ -14,14 +13,17 @@ def maxProfit(stocks):
 
 
 
-def maxProfit(self, prices: List[int]) -> int:
-    answer = 0
-    smallest = float("inf")
+# (2) Linear time
+# Time:  O(N)   ,    Space: O(1)
+
+def maxProfit(prices):
+    if not prices:
+        return 0
+
+    min_value = float('inf')
+    max_profit = 0
         
     for i in range(len(prices)):
-        if prices[i] > smallest:
-            answer = max(answer, prices[i] - smallest)
-        else:
-            smallest = prices[i]
-        
-    return answer
+        min_value = min(min_value, prices[i])
+        max_profit = max(max_profit, prices[i] - min_value)
+    return max_profit      
