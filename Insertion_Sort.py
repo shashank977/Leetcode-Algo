@@ -4,4 +4,5 @@ def insertion_sort(array):
         while item > 0 and array[item] < array[item-1]:
             array[item] , array[item-1] = array[item-1], array[item]
             item = item - 1
-    return array
+    return array                       
+#   Time:  O(N^2)   ,   Space:  O(1)
