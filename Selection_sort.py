@@ -1,3 +1,5 @@
+# Time:  O(N^2)   ,   Space:  O(1)
+
 def selection_sort(array):
     for i in range(0 , len(array)-1):
         min_value = i
