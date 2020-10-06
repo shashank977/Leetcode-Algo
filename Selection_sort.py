@@ -7,3 +7,9 @@ def selection_sort(array):
                 min_value = j
                 array[min_value] , array[i] = array[i], array[min_value]
     return array
+
+
+
+
+
+print(selection_sort([6,7,8,7,6,1,2,1,10,5,4,5,6,7,6,7,0]))
