@@ -1,3 +1,4 @@
+# Time:  O(N^2)   ,   Space:  O(1)
 def bubble(array):
     isSorted=False
 
@@ -8,7 +9,3 @@ def bubble(array):
                 array[i], array[i+1] = array[i+1], array[i]
                 isSorted=False
     return array
-
-
-##  time: O(N*N)
-## space: O(1)
